@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Bookers</title>
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="32WQvMmHyuBX6nyNEKlsXAgxso6bhZGlRnkcFDzAt2FfkfI8zAcOTnOude6dQVrm6tFfgXVOKxBiJSG44XkBzA==">
+    <link rel="stylesheet" href="books.scss" />
+
+  </head>
+
+ <body>
+     <%= flash[:notice] %>
+   <p>
+     <strong>Title:</strong>
+     <%= @book.title %>
+     <br>
+     <br>
+     <br>
+     <strong>Body:</strong>
+     <%= @book.body %>
+
+   </p>
+
+    <%= link_to "Edit", edit_book_path %>
+     |
+    <%= link_to "Back", books_path %>
+
+
+ </body>
+
+</html>
